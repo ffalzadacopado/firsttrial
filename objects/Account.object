@@ -259,6 +259,16 @@
         <type>Picklist</type>
     </fields>
     <fields>
+        <fullName>Is_Important__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>High value account designation</description>
+        <externalId>false</externalId>
+        <inlineHelpText>To determine value of account</inlineHelpText>
+        <label>Is Important</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>Jigsaw</fullName>
         <trackFeedHistory>false</trackFeedHistory>
     </fields>
