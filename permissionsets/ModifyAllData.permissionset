@@ -3,6 +3,15 @@
     <description>ModifyAllData</description>
     <hasActivationRequired>false</hasActivationRequired>
     <label>ModifyAllData</label>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Tractor__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
     <userPermissions>
         <enabled>true</enabled>
         <name>AssignTopics</name>
