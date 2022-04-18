@@ -1,4 +1,4 @@
-public with sharing class trialcall3 {
+public class trialcall3 {
     Public static Account setDefaultDescription(Account a){
         If (a.Description != null) return a;
         Else {
@@ -6,8 +6,10 @@ public with sharing class trialcall3 {
             return a;
         }
     }
-    public static Account setDefaultSite(Account a){
-        a.Site = 'Single location'; 
+    public static Account setDefaultBillingAddress(Account a){
+        a.billingstreet = 'Basauri, 6'; 
+        a.billingstate = 'Madrid'; 
+        a.billingpostalcode ='28023'; 
         return a;
     }
     public static Account setDefaultShippingAddress(Account a){
