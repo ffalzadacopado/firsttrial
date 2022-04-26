@@ -1,5 +1,5 @@
 @IsTest
-private class ConflictResolve {
+private class ConflictResolveTest {
 
     @isTest static void testDefaultDescription(){
         Account acc = new Account(Name = 'My Test Account');
