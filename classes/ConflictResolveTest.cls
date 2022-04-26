@@ -24,23 +24,23 @@ private class ConflictResolveTest {
         Account acc = new Account(Name = 'My Test Account');
         insert acc;
         acc = ConflictResolve.setDefaultShippingAddress(acc);
-        System.assertEquals('111 W Illinois St', acc.ShippingStreet, 'Default ShippingStreet is 111 W Illinois St');
-        System.assertEquals('Chicago', acc.ShippingState, 'Default Shippingtate is Chicago');
-        System.assertEquals('60654', acc.ShippingPostalCode, 'Default ShippingPostalCode is 60654');
+        System.assertEquals('Basauri, 6', acc.ShippingStreet, 'Default ShippingStreet is Basauri, 6');
+        System.assertEquals('Madrid', acc.ShippingState, 'Default Shippingtate is Madrid');
+        System.assertEquals('28023', acc.ShippingPostalCode, 'Default ShippingPostalCode is 28023');
     }
 
     @isTest static void testDefaultPhone(){
         Account acc = new Account(Name = 'My Test Account');
         insert acc;
         acc = ConflictResolve.setDefaultPhone(acc);
-        System.assertEquals('9999999', acc.Phone, 'Default phone number is 9999999');
+        System.assertEquals('688456789', acc.Phone, 'Default phone number is 688456789');
     }
 
     @isTest static void testDefaultURL(){
         Account acc = new Account(Name = 'My Test Account');
         insert acc;
         acc = ConflictResolve.setDefaultURL(acc);
-        System.assertEquals('www.copado.com', acc.Website, 'Default website is www.copado.com');
+        System.assertEquals('www.copa.do', acc.Website, 'Default website is www.copa.do');
     }
 
 }
